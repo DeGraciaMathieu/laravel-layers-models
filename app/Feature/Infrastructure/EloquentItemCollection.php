@@ -7,5 +7,5 @@ use Illuminate\Database\Eloquent\Collection;
 
 class EloquentItemCollection extends Collection implements ItemAggregate
 {
-
+    //
 }
