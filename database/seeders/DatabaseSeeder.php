@@ -3,7 +3,7 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
-use App\Feature\Infrastructure\Item;
+use App\Feature\Infrastructure\EloquentItem;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 
 class DatabaseSeeder extends Seeder
@@ -15,6 +15,6 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        Item::factory(10)->create();
+        EloquentItem::factory()->count(10)->create();
     }
 }
